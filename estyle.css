@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cian: #2ab2af;
+    --amarillo-lima: #c0df34;
+    --gris-claro: #e5eff5;
+    --azul-grisaceo: #98a6bd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--gris-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    background-color: white;
+    max-width: 630px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.seccion-intro {
+    padding: 40px;
+}
+
+.titulo-comunidad {
+    color: var(--cian);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.garantia {
+    color: var(--amarillo-lima);
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.descripcion {
+    color: var(--azul-grisaceo);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.grupo-inferior {
+    display: flex;
+    flex-direction: column; 
+}
+
+.seccion-precio {
+    background-color: var(--cian);
+    color: white;
+    padding: 40px;
+    flex: 1;
+}
+
+.seccion-beneficios {
+   
+    padding: 40px;
+    flex: 1;
+    padding: 40px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contenedor-precio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+.monto {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.frecuencia {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+
+.detalle-precio {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.boton-registro {
+    width: 100%;
+    background-color: var(--amarillo-lima);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.boton-registro:hover {
+    background-color: #acc92e;
+    transform: translateY(-2px);
+}
+
+.lista-beneficios {
+    list-style: none;
+    font-size: 14px;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+@media (min-width: 600px) {
+    .grupo-inferior {
+        flex-direction: row; 
+    }
+}
